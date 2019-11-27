@@ -7,12 +7,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.ubs.cw.demo.cwdemoproject.dao.CustomerRepository;
 import com.ubs.cw.demo.cwdemoproject.domain.Customer;
+import com.ubs.cw.demo.cwdemoproject.service.CustomerService;
 
 @SpringBootApplication
 public class CwDemoProjectApplication implements CommandLineRunner {
 
 	@Autowired
 	CustomerRepository customerRepository;
+
+	@Autowired
+	CustomerService customerService;
 
 	public static void main(final String[] args) {
 		SpringApplication.run(CwDemoProjectApplication.class, args);
@@ -21,15 +25,15 @@ public class CwDemoProjectApplication implements CommandLineRunner {
 	@Override
 	public void run(final String... args) throws Exception {
 
-		customerRepository.save(new Customer("Customer1"));
-		customerRepository.save(new Customer("Customer2"));
-		customerRepository.save(new Customer("Customer3"));
+		customerService.createCustomer(new Customer("Customer11"));
+		customerService.createOrUpdateCustomer(new Customer(2L, "Customer22"));
+		customerService.createCustomer(new Customer("Customer33"));
 
-		System.out.println("\nfindAll()");
-		customerRepository.findAll().forEach(x -> System.out.println(x.getName()));
+		System.out.println("\ngetAllCustomer()");
+		customerService.getAllCustomer().forEach(x -> System.out.println(x.getName()));
 
-		System.out.println("\nfindAll()");
-		System.out.println(customerRepository.findByName("Customer1"));
+		System.out.println("\nfindByName()");
+		System.out.println(customerService.findByName("Customer1"));
 	}
 
 }

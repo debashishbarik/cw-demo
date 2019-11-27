@@ -17,6 +17,12 @@ public class Customer {
 	public Customer() {
 	}
 
+	public Customer(final Long id, final String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
 	public Customer(final String name) {
 		this.name = name;
 	}
