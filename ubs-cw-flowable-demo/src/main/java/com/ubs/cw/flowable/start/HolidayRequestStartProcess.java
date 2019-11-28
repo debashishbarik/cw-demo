@@ -47,6 +47,10 @@ public class HolidayRequestStartProcess {
 				.addClasspathResource("holiday-request.bpmn20.xml").deploy();
 
 		// Step-3 We can now verify that the process definition is known to the engine
+		// To start the process instance, we need to provide some initial process
+		// variables. Typically, you’ll get these through a form that is presented to
+		// the user or through a REST API when a process is triggered by something
+		// automatic.
 		final ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery()
 				.deploymentId(deployment.getId()).singleResult();
 		System.out.println("Found process definition : " + processDefinition.getName());
@@ -67,6 +71,8 @@ public class HolidayRequestStartProcess {
 		variables.put("employee", employee);// link with flowable:assignee="${employee}" inside xml at runtime
 		variables.put("nrOfHolidays", nrOfHolidays);
 		variables.put("description", description);
+		// <process id="holidayRequest" name="Holiday Request" isExecutable="true"> we
+		// have to use this process id and map variables to start the process
 		final ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("holidayRequest", variables);
 
 		// STep-6 get the actual task list, we create a TaskQuery through the
@@ -86,7 +92,12 @@ public class HolidayRequestStartProcess {
 		System.out.println(processVariables.get("employee") + " wants " + processVariables.get("nrOfHolidays")
 				+ " of holidays. Do you approve this?");
 
-		// Step-7 Approved or Rejected [Call External system]
+		// Step-7 Approved or Rejected [Call External system]The manager can now
+		// complete the task. In reality, this often means that a form is submitted by
+		// the user. The data from the form is then passed as process variables. Here,
+		// we’ll mimic this by passing a map with the approved variable (the name is
+		// important, as it’s used later on in the conditions of the sequence flow!)
+		// when the task is completed:
 		final boolean approved = scanner.nextLine().toLowerCase().equals("y");
 		variables = new HashMap<String, Object>();
 		variables.put("approved", approved);
