@@ -19,6 +19,8 @@ public class ServiceAccessAspect {
 	public void beforeService(final JoinPoint joinPoint) {
 		// Advice
 		log.debug(" Start service execution for {}", joinPoint);
+		System.out.println("Start service execution for {}" + joinPoint);
+
 	}
 
 	@After(value = "execution(* com.ubs.cw.aop.services.*.*(..))")

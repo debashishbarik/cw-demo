@@ -17,8 +17,9 @@ public class DataAccessAspect {
 	public void beforeService(final JoinPoint joinPoint) {
 		// Advice
 		log.debug(" Start DAO execution for {}", joinPoint);
-		System.out.println("Start DAO execution for {}" + joinPoint);
-		// Ex: execution(String com.ubs.cw.aop.dao.GreetingDao.retrieveGreetingMessages())
+		System.out.println("Start DAO execution for {}dd" + joinPoint);
+		// Ex: execution(String
+		// com.ubs.cw.aop.dao.GreetingDao.retrieveGreetingMessages())
 	}
 
 	@After(value = "execution(* com.ubs.cw.aop.dao.*.*(..))")
