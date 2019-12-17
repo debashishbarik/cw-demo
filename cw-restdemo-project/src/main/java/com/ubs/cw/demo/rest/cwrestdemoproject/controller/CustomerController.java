@@ -1,6 +1,7 @@
 package com.ubs.cw.demo.rest.cwrestdemoproject.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -34,9 +35,15 @@ public class CustomerController {
 	@GetMapping("/{id}")
 	public ResponseEntity<Customer> getCustomerById(@PathVariable("id") final Long id)
 			throws CustomerNotFoundException {
-		final Customer entity = customerService.getCustomerById(id);
+		final Optional<Customer> entity = customerService.getCustomerById(id);
+		ResponseEntity<Customer> customerEntity = null;
+		if (entity.isPresent()) {
+			customerEntity = new ResponseEntity<Customer>(entity.get(), new HttpHeaders(), HttpStatus.OK);
+		} else {
+			customerEntity = new ResponseEntity<Customer>(HttpStatus.NOT_FOUND);
+		}
 
-		return new ResponseEntity<Customer>(entity, new HttpHeaders(), HttpStatus.OK);
+		return customerEntity;
 	}
 
 	@PostMapping

@@ -57,12 +57,12 @@ public class CustomerServiceImpl implements CustomerService {
 	 * @throws CustomerNotFoundException the customer not found exception
 	 */
 	@Override
-	public Customer getCustomerById(final Long id) throws CustomerNotFoundException {
+	public Optional<Customer> getCustomerById(final Long id) throws CustomerNotFoundException {
 		final Optional<Customer> customer = customerRepository.findById(id);
 		if (customer.isPresent()) {
-			return customer.get();
+			return customer;
 		} else {
-			throw new CustomerNotFoundException("Customer record not found with this id");
+			return Optional.empty();
 		}
 	}
 
