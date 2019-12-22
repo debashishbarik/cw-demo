@@ -3,11 +3,13 @@ package com.ubs.wcat.ms.rest.v1;
 import com.ubs.wcat.ms.model.Employee;
 import com.ubs.wcat.ms.rest.EmployeeResource;
 import com.ubs.wcat.ms.service.EmployeeService;
+import jdk.nashorn.internal.runtime.regexp.joni.encoding.ObjPtr;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class EmployeeResourceV1 implements EmployeeResource {
@@ -26,7 +28,12 @@ public class EmployeeResourceV1 implements EmployeeResource {
     }
     @Override
     public ResponseEntity<Employee> findEmployeeById(Long id) {
-        return ResponseEntity.ok(employeeService.findEmployeeById(id).get());
+        Optional<Employee> employeeOptional = employeeService.findEmployeeById(id);
+        if(employeeOptional.isPresent()) {
+            return ResponseEntity.ok(employeeService.findEmployeeById(id).get());
+        }else{
+            return ResponseEntity.notFound().build();
+        }
     }
     @Override
     public ResponseEntity<Employee> updateEmployee(Employee newEmployee, Long id) {
@@ -34,7 +41,13 @@ public class EmployeeResourceV1 implements EmployeeResource {
     }
     @Override
     public ResponseEntity deleteEmployee(Long id) {
-        employeeService.deleteEmployee(id);
-        return ResponseEntity.accepted().build();
+        Optional<Employee> employeeOptional = employeeService.findEmployeeById(id);
+        if(employeeOptional.isPresent()) {
+            employeeService.deleteEmployee(id);
+            return ResponseEntity.accepted().build();
+        }else{
+            return ResponseEntity.notFound().build();
+        }
+
     }
 }
