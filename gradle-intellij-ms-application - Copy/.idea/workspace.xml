@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f04d3ac-d280-4b6d-870f-bf3a37508010" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/config/LoadDatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/domain/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/domain/EmployeeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/model/BaseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/repo/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/repo/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/rest/EmployeeResourceV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/rest/WcatCrudResourceV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/rest/WcatResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/java/com/ubs/wcat/service/BaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/resources/ application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wcat-generic-rest-service/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gradle-intellij-ms-application" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gradle-intellij-ms-application" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1VIwLnJfp0fOXBQFmXQn3jIHKML" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="LombokPluginIS_ANNOTATION_PROCESSING_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_BUILDER_Enabled" value="true" />
+    <property name="LombokPluginIS_CONSTRUCTOR_Enabled" value="true" />
+    <property name="LombokPluginIS_DELEGATE_Enabled" value="true" />
+    <property name="LombokPluginIS_LOG_Enabled" value="true" />
+    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_VAL_Enabled" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/ubs/wcat/ms/rest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wcat-generic-rest-service" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.ubs.wcat.ms.rest" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\UBS\CW\demo\cw-demo\gradle-intellij-ms-application\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'gradle-intellij-ms-application.test'">
+    <configuration name="EmployeeResourceV1Test.getAllEmployeesAPI" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.ubs.wcat.ms.rest.EmployeeResourceV1Test.getAllEmployeesAPI&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EmployeeResourceV1Test.testCustomerByIdNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.ubs.wcat.ms.rest.EmployeeResourceV1Test.testCustomerByIdNotFound&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EmployeeResourceV1Test.testCustomerDeleteSuceess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.ubs.wcat.ms.rest.EmployeeResourceV1Test.testCustomerDeleteSuceess&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EmployeeResourceV1Test.testEmployeeByIdFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.ubs.wcat.ms.rest.EmployeeResourceV1Test.testEmployeeByIdFound&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'gradle-intellij-ms-application.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'gradle-intellij-ms-application.test'" />
+        <item itemvalue="Gradle.EmployeeResourceV1Test.getAllEmployeesAPI" />
+        <item itemvalue="Gradle.EmployeeResourceV1Test.testCustomerDeleteSuceess" />
+        <item itemvalue="Gradle.EmployeeResourceV1Test.testCustomerByIdNotFound" />
+        <item itemvalue="Gradle.EmployeeResourceV1Test.testEmployeeByIdFound" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f04d3ac-d280-4b6d-870f-bf3a37508010" name="Default Changelist" comment="" />
+      <created>1576953863419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576953863419</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="359" y="152" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577035895878">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="359" y="152" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1577035895878" />
+    <state x="446" y="61" key="#com.intellij.ide.util.MemberChooser" timestamp="1577011970929">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="61" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1577011970929" />
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576995897248">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1576995897248" />
+    <state x="404" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1577044551786">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="404" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1577044551786" />
+    <state x="421" y="91" key="FileChooserDialogImpl" timestamp="1577124693440">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="91" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1577124693440" />
+    <state width="1237" height="224" key="GridCell.Tab.0.bottom" timestamp="1577044483132">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="224" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577044483132" />
+    <state width="1237" height="224" key="GridCell.Tab.0.center" timestamp="1577044483131">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="224" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1577044483131" />
+    <state width="1237" height="224" key="GridCell.Tab.0.left" timestamp="1577044483131">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="224" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1577044483131" />
+    <state width="1237" height="224" key="GridCell.Tab.0.right" timestamp="1577044483131">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="224" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1577044483131" />
+    <state width="1237" height="129" key="GridCell.Tab.1.bottom" timestamp="1577039788420">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="129" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577039788420" />
+    <state width="1237" height="129" key="GridCell.Tab.1.center" timestamp="1577039788420">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="129" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1577039788420" />
+    <state width="1237" height="129" key="GridCell.Tab.1.left" timestamp="1577039788420">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="129" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1577039788420" />
+    <state width="1237" height="129" key="GridCell.Tab.1.right" timestamp="1577039788420">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="129" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1577039788420" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1577026748669">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577026748669" />
+    <state x="452" y="123" key="chooseDestDirectoryDialog" timestamp="1576996015367">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="452" y="123" key="chooseDestDirectoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1576996015367" />
+    <state x="395" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577010964190">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="395" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1577010964190" />
+    <state x="91" y="0" key="new project wizard" timestamp="1577037789694">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1577037789694" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1577043890530">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1577043890530" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1577024822533">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1577024822533" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/ms/service/impl/EmployeeServiceImpl.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/ms/service/impl/EmployeeServiceImpl.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/ms/service/impl/EmployeeServiceImpl.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/ms/service/impl/EmployeeServiceImpl.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
