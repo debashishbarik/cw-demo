@@ -6,7 +6,11 @@ import org.springframework.stereotype.Repository;
 public class GreetingDao {
 
 	public String retrieveGreetingMessages() {
+		Callingngngn();
 		return "Retrieve Greeting Messages!!!";
 	}
 
+	private String Callingngngn() {
+		return "Call;;;;";
+	}
 }
