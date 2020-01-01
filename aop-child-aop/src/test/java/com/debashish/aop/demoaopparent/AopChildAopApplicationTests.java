@@ -1,4 +1,4 @@
-package com.ubs.cw.demo.cwdemoproject;
+package com.debashish.aop.demoaopparent;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.debashish.aop.demoaopparent.service.CoreServiceI;
 
 @SpringBootTest
-class CwDemoProjectApplicationTests {
+class AopChildAopApplicationTests {
 
 	@Autowired
 	CoreServiceI service;
@@ -15,8 +15,6 @@ class CwDemoProjectApplicationTests {
 	@Test
 	void contextLoads() {
 		service.k();
-		service.m();
-		service.msg();
 	}
 
 }
