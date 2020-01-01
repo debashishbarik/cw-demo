@@ -80,7 +80,7 @@ public class CustomerController {
 	}
 
 	@PostMapping
-	public ResponseEntity<Customer> createOrUpdateCustomer(final Customer customer) throws CustomerNotFoundException {
+	public ResponseEntity<Customer> createOrUpdateCustomer(@RequestBody final Customer customer) throws CustomerNotFoundException {
 		final Customer updated = customerService.createCustomer(customer);
 		return new ResponseEntity<Customer>(updated, new HttpHeaders(), HttpStatus.OK);
 	}
