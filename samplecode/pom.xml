@@ -22,6 +22,7 @@
 	<description>Sample projects for Spring Data CosmosDB</description>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
