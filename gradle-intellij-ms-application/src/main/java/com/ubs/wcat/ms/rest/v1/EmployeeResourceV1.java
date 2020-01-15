@@ -3,11 +3,11 @@ package com.ubs.wcat.ms.rest.v1;
 import com.ubs.wcat.ms.model.Employee;
 import com.ubs.wcat.ms.rest.EmployeeResource;
 import com.ubs.wcat.ms.service.EmployeeService;
-import jdk.nashorn.internal.runtime.regexp.joni.encoding.ObjPtr;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -49,5 +49,18 @@ public class EmployeeResourceV1 implements EmployeeResource {
             return ResponseEntity.notFound().build();
         }
 
+    }
+
+    @Override
+    public ResponseEntity<?> getOrdersByDate(LocalDate date) {
+        if(date.isAfter(LocalDate.now())){
+            System.out.println("Date is Future date");
+        }
+        LocalDate priortoCurrentDate = LocalDate.now().minusDays(1);
+        LocalDate priortoPassedDate = date.minusDays(1);
+        System.out.println(priortoCurrentDate);
+        LocalDate updatedate = date;
+        System.out.println("updatedate:"+updatedate);
+        return  ResponseEntity.ok("OK");
     }
 }
