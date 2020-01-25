@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="decfa660-e385-4431-b8d8-2358ce8ad284" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1VOWbbclyrw1GOrWd4agw58QxdN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/ubs/wcat" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/cw-restdemo-library.jar!/" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="instant.run" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ubs.wcat.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\UBS\CW\demo\cw-demo\wcat-generic-rest-service\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WcatGenericRestServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ubs.wcat.WcatGenericRestServiceApplication" />
+      <module name="wcat-generic-rest-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ubs.wcat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WcatGenericRestServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="decfa660-e385-4431-b8d8-2358ce8ad284" name="Default Changelist" comment="" />
+      <created>1577124694045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577124694045</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577128306692">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1577128306692" />
+    <state x="401" y="184" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1577263657297">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="401" y="184" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1577263657297" />
+    <state x="446" y="61" key="#com.intellij.ide.util.MemberChooser" timestamp="1577134735488">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="61" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1577134735488" />
+    <state x="443" y="211" width="394" height="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577134760548">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="443" y="211" width="394" height="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1577134760548" />
+    <state x="444" y="99" key="FileChooserDialogImpl" timestamp="1577289945645">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="444" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1577289945645" />
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1577181372166">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577181372166" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1577181372166">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1577181372166" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1577181372166">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1577181372166" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1577181372166">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1577181372166" />
+    <state width="1237" height="166" key="GridCell.Tab.1.bottom" timestamp="1577181372033">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577181372033" />
+    <state width="1237" height="166" key="GridCell.Tab.1.center" timestamp="1577181372033">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1577181372033" />
+    <state width="1237" height="166" key="GridCell.Tab.1.left" timestamp="1577181372033">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1577181372033" />
+    <state width="1237" height="166" key="GridCell.Tab.1.right" timestamp="1577181372033">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1577181372033" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1577289947777">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577289947777" />
+    <state x="452" y="123" key="chooseDestDirectoryDialog" timestamp="1577125384140">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="452" y="123" key="chooseDestDirectoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1577125384140" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/rest/WcatCrudResourceV1.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/service/BaseServiceImpl.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/service/BaseServiceImpl.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/config/LoadDatabaseConfig.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ubs/wcat/rest/EmployeeResourceV1.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

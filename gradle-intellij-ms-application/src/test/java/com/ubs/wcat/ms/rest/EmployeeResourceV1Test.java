@@ -2,6 +2,7 @@ package com.ubs.wcat.ms.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ubs.wcat.ms.domain.EmployeeReport;
 import com.ubs.wcat.ms.model.Employee;
 import com.ubs.wcat.ms.service.EmployeeService;
 import org.junit.jupiter.api.DisplayName;
@@ -16,6 +17,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
+import java.math.BigDecimal;
 import java.util.Optional;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -101,6 +103,33 @@ public class EmployeeResourceV1Test {
         mockMvc.perform(delete("/v1/employees/{id}",1))
                 .andExpect(status().isAccepted());
 
+    }
+    @Test
+public void testMy(){
+
+
+        EmployeeReport employeeReport4 =  new EmployeeReport();
+        employeeReport4.setAddress("address1");
+        employeeReport4.setAmountUSD(new BigDecimal(1230000));
+        employeeReport4.setDesc("L4 desc");
+        employeeReport4.setId("1001");
+        employeeReport4.setLine3("L3 DATA");
+        employeeReport4.setLine4("L4 DATA");
+        employeeReport4.setName("EMP");
+        employeeReport4.setRole("ROLE");
+
+
+        EmployeeReport employeeReport42 =  new EmployeeReport();
+        employeeReport42.setAddress("address1");
+        employeeReport42.setAmountUSD(new BigDecimal(1230000));
+        employeeReport42.setDesc("L4 desc");
+        employeeReport42.setId("1001");
+        employeeReport42.setLine3("L3 DATA");
+        employeeReport42.setLine4("L4 DATA");
+        employeeReport42.setName("EMP");
+        employeeReport42.setRole("ROLE");
+
+        System.out.println("---------->"+employeeReport4.checkL4Similarity(employeeReport42));
     }
 
     static String asJsonString(final Object obj ) {

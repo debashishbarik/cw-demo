@@ -1,0 +1,5 @@
+azure:
+  cosmosdb:
+    uri:  https://debashishbarik.documents.azure.com:443/
+    key:  MPLyA9IvrV6zXeO2L0vuh4T0k06e1kU0snbXbFUckUZkH8jCowGYzVTAmZVQSD3SxvHZNlTvty6STPQ7ur7P4A==
+    database: debashishbarik
