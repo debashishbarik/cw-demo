@@ -23,12 +23,12 @@ public class DeepCopyUtils {
 
     public static <T, E> List<T> copyListOfObjects(List<E> fromList, Class<T> toValueType) {
 
-        List<T> userList = fromList.stream().map(fromType ->
+        List<T> toList = fromList.stream().map(fromType ->
                 {
                     T t = DeepCopyUtils.copyProperties(fromType, toValueType);
                     return t;
                 }
         ).collect(Collectors.toList());
-        return userList;
+        return toList;
     }
 }
