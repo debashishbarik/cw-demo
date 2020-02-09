@@ -1,12 +1,17 @@
 package com.debashish.spring.cosmosdb.service;
 
+import com.debashish.spring.cosmosdb.domain.ExternalUserDocument;
+import com.debashish.spring.cosmosdb.domain.InternalUserDocument;
 import com.debashish.spring.cosmosdb.domain.UserDocument;
 import com.debashish.spring.cosmosdb.repository.UserRepository;
+import com.debashish.spring.cosmosdb.rest.v1.request.ExternalUser;
+import com.debashish.spring.cosmosdb.rest.v1.request.InternalUser;
 import com.debashish.spring.cosmosdb.rest.v1.request.User;
 import com.debashish.spring.cosmosdb.util.DeepCopyUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -15,10 +20,16 @@ import java.util.UUID;
 @Slf4j
 public class UserServiceImpl implements UserService {
 
-    UserRepository userRepository;
+    UserRepository<UserDocument, String> userRepository;
 
-    public UserServiceImpl(UserRepository userRepository) {
+    UserRepository<InternalUserDocument, String> internalUserRepository;
+
+    UserRepository<ExternalUserDocument, String> externalUserRepository;
+
+    public UserServiceImpl(UserRepository<UserDocument, String> userRepository, UserRepository<InternalUserDocument, String> internalUserRepository, UserRepository<ExternalUserDocument, String> externalUserRepository) {
         this.userRepository = userRepository;
+        this.internalUserRepository = internalUserRepository;
+        this.externalUserRepository = externalUserRepository;
     }
 
     @Override
@@ -32,7 +43,7 @@ public class UserServiceImpl implements UserService {
                 }
         ).collect(Collectors.toList());*/
 
-        List<User> userList = DeepCopyUtils.copyListOfObjects(userDocumentList,User.class);
+        List<User> userList = DeepCopyUtils.copyListOfObjects(userDocumentList, User.class);
         return userList;
     }
 
@@ -44,6 +55,39 @@ public class UserServiceImpl implements UserService {
         UserDocument userDocumentNew = userRepository.save(userDocument).block();
         User userNew = DeepCopyUtils.copyProperties(userDocumentNew, User.class);
         return userNew;
+    }
+
+    @Override
+    public InternalUser newInternalUser(InternalUser internalUser) {
+
+        InternalUserDocument userDocument = DeepCopyUtils.copyProperties(internalUser, InternalUserDocument.class);
+        userDocument.setId(UUID.randomUUID().toString());
+        userDocument.getAddress().setId(UUID.randomUUID().toString());
+        InternalUserDocument userDocumentNew = internalUserRepository.save(userDocument).block();
+        InternalUser userNew = DeepCopyUtils.copyProperties(userDocumentNew, InternalUser.class);
+        return userNew;
+    }
+
+    @Override
+    public ExternalUser newExternalUser(ExternalUser externalUser) {
+        ExternalUserDocument userDocument = DeepCopyUtils.copyProperties(externalUser, ExternalUserDocument.class);
+        userDocument.setId(UUID.randomUUID().toString());
+        userDocument.getAddress().setId(UUID.randomUUID().toString());
+        ExternalUserDocument userDocumentNew = externalUserRepository.save(userDocument).block();
+        ExternalUser userNew = DeepCopyUtils.copyProperties(userDocumentNew, ExternalUser.class);
+        return userNew;
+    }
+
+    @Override
+    public List<ExternalUser> findExternalUsersByType(String userType) {
+
+        List<ExternalUserDocument> userDocumentList = new ArrayList<>();
+
+        userDocumentList = externalUserRepository.findAllByUserType(userType).collectList().block();
+
+        List<ExternalUser> userList = DeepCopyUtils.copyListOfObjects(userDocumentList, ExternalUser.class);
+
+        return userList;
     }
 
     @Override
@@ -60,4 +104,5 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(Long id) {
 
     }
+
 }

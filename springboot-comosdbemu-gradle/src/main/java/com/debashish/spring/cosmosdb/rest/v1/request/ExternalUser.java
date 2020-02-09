@@ -7,14 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
-
-    private String id;
-    private String firstName;
-
-    private String lastName;
-    private Address address;
-
-    private String userType;
+public class ExternalUser extends User {
+    private String companyName;
+    private String companyId;
 
 }

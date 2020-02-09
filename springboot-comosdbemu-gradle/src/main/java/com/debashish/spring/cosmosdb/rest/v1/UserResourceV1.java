@@ -1,6 +1,8 @@
 package com.debashish.spring.cosmosdb.rest.v1;
 
 import com.debashish.spring.cosmosdb.rest.UserResource;
+import com.debashish.spring.cosmosdb.rest.v1.request.ExternalUser;
+import com.debashish.spring.cosmosdb.rest.v1.request.InternalUser;
 import com.debashish.spring.cosmosdb.rest.v1.request.User;
 import com.debashish.spring.cosmosdb.service.UserService;
 import org.springframework.http.HttpStatus;
@@ -29,6 +31,22 @@ public class UserResourceV1 implements UserResource {
     public ResponseEntity<User> createUser(User user) {
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.newUser(user));
     }
+
+    @Override
+    public ResponseEntity<InternalUser> createInternalUser(InternalUser internalUser) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(userService.newInternalUser(internalUser));
+    }
+
+    @Override
+    public ResponseEntity<ExternalUser> createExternalUser(ExternalUser externalUser) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(userService.newExternalUser(externalUser));
+    }
+
+    @Override
+    public ResponseEntity<List<ExternalUser>> findUsersByType(String userType) {
+        return ResponseEntity.ok(userService.findExternalUsersByType(userType));
+    }
+
 
     @Override
     public ResponseEntity<User> findUserById(Long id) {

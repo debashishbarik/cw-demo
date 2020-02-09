@@ -1,5 +1,7 @@
 package com.debashish.spring.cosmosdb.rest;
 
+import com.debashish.spring.cosmosdb.rest.v1.request.ExternalUser;
+import com.debashish.spring.cosmosdb.rest.v1.request.InternalUser;
 import com.debashish.spring.cosmosdb.rest.v1.request.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +15,16 @@ public interface UserResource {
 
     @PostMapping
     ResponseEntity<User> createUser(@RequestBody User user);
+
+    @PostMapping("/internal")
+    ResponseEntity<InternalUser> createInternalUser(@RequestBody InternalUser internalUser);
+
+    @PostMapping("/external")
+    ResponseEntity<ExternalUser> createExternalUser(@RequestBody ExternalUser externalUser);
+
+
+    @GetMapping("usertype/{userType}")
+    ResponseEntity<List<ExternalUser>> findUsersByType(@PathVariable String userType);
 
     @GetMapping("/{id}")
     ResponseEntity<User> findUserById(@PathVariable Long id);

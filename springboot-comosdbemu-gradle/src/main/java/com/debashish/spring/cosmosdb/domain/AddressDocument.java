@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 
-@Document(collection = "Address")
+@Document
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
