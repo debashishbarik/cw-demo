@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.debashish.springdrools.api.Order;
+import com.debashish.springdrools.model.Order;
 
 import lombok.RequiredArgsConstructor;
 

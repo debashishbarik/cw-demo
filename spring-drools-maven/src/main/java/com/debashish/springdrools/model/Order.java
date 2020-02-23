@@ -1,4 +1,4 @@
-package com.debashish.springdrools.api;
+package com.debashish.springdrools.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

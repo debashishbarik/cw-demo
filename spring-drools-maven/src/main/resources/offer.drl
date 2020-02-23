@@ -1,6 +1,6 @@
 package KieRule;
 
-import com.debashish.springdrools.api.Order;
+import com.debashish.springdrools.model.Order;
 
 rule "HDFC"
 
