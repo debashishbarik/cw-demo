@@ -1,0 +1,46 @@
+package KieRule;
+
+import com.debashish.springdrools.model.RawData;
+
+dialect "java" 
+
+global com.debashish.springdrools.model.Exception except;
+rule "RULE1"
+
+	when
+		rawData : RawData(functionId=="HDFC" && price>10000);
+	then
+		except.setStatus("INCOMPLETE")
+	end;
+
+rule "RULE2"
+
+	when
+		rawData : RawData(cardType=="HDFC" && price>10000);
+	then
+		except.setStatus("INCOMPLETE")
+	end;
+
+rule "RULE3"
+
+	when
+		rawData : RawData(cardType=="HDFC" && price>10000);
+	then
+		except.setStatus("INCOMPLETE")
+	end;
+
+rule "RULE4"
+
+	when
+		rawData : RawData(cardType=="HDFC" && price>10000);
+	then
+		except.setStatus("INCOMPLETE")
+	end;
+
+rule "RULE5"
+
+	when
+		rawData : RawData(cardType=="HDFC" && price>10000);
+	then
+		except.setStatus("INCOMPLETE")
+	end;

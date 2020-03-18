@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "name": "ABC11",
+      "rollNo": "106",
+      "school": "xyz",
+      "country": "India",
+      "state": "Maha"
+    },
+    {
+      "name": "ABC12",
+      "rollNo": "105",
+      "school": "xyz",
+      "country": "India",
+      "state": "Maha"
+    },
+    {
+      "name": "ABC13",
+      "rollNo": "104",
+      "school": "xyz",
+      "country": "India",
+      "state": "Maha"
+    },
+    {
+      "name": "ABC14",
+      "rollNo": "103",
+      "school": "xyz",
+      "country": "DBS",
+      "state": "Maha"
+    },
+    {
+      "name": "ABC15",
+      "rollNo": "102",
+      "school": "xyz",
+      "country": "DBS",
+      "state": "Maha"
+    },
+    {
+      "name": "ABC16",
+      "rollNo": "101",
+      "school": "xyz",
+      "country": "DBS",
+      "state": "Maha"
+    }
+  ]
+}
